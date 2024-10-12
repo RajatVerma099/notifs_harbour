@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Initialize Firebase Admin SDK
-cred = credentials.Certificate("harbour-final-firebase-private-key.json")  # Provide the path to your Firebase key here
+cred = credentials.Certificate("harbour-final-firebase-private-key.json")  
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
